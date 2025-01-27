@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação de Consultas - Pagamento</title>
+    <link rel="stylesheet" href="encomendas.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <img class="logo" src="bebidas.img/Captura de tela 2025-01-27 093506.png" alt="Logo">
+        <nav>
+            <ul class="menu">
+             
+            <a href="Bebidas.html"> produtos</a>
+            <a href="index.html">Home</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo">
+        <h1>encomenda</h1>
+        <section class="formulario-pagamento">
+            <form action="resposta.html" method="get">
+                <fieldset>
+                    <legend>Informações da encomenda</legend>
+
+                    
+                    <div class="form-group">
+                        <label for="nome">nome:</label>
+                        <input type="number" id="nome" name="nome" placeholder="nome" required>
+                    </div>
+
+                    
+
+                    <div class="form-group">
+                        <label for="qtde">qtde:</label>
+                        <input type="number" id="qtde" name="qtde" placeholder="qtde" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servico">Forma de Pagamento:</label>
+                        <select id="servico" name="pagamento" required>
+                            <option selected disabled value="">Selecione uma opção</option>
+                            <option value="debito">Débito</option>
+                            <option value="credito">Crédito</option>
+                            <option value="pix">PIX</option>
+                        </select>
+                    </div>
+
+                  
+                   
+                    <div class="form-group">
+                        <label for="endereco">endereço:</label>
+                        <input type="endereco" id="endereco" name="endereco" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade">cidade:</label>
+                        <input type="cidade" id="cidade" name="cidade" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">estado:</label>
+                        <input type="estado" id="estado" name="estado" required>
+                    </div>
+
+                   
+
+                    <div class="form-group">
+                        <input type="submit" value="Confirmar" class="btn-submit">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
